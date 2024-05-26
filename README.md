@@ -8,7 +8,7 @@ This project is a static website that mimics the Udemy homepage. It includes ele
 
 ## Demo
 
-You can view a live demo of the project [here](#). (Add the link to your live demo if available)
+You can view a live demo of the project [[here](https://ash145.github.io/Udemy-Clone/)](#). (Add the link to your live demo if available)
 
 ## Technologies Used
 
