@@ -7,6 +7,9 @@ body{
     font-family: "Gabarito", sans-serif;
 }
 
+img{
+    cursor: pointer;
+}
 /* Navbar Style */
 
 .navbar{
@@ -50,6 +53,10 @@ body{
     display: flex;
     gap: 15px;
     align-items: center;
+}
+
+.navbar__links *:hover{
+    cursor: pointer;
 }
 
 .mylearning{
@@ -118,7 +125,24 @@ body{
     position: absolute;
     border: 2px solid black;
     top: 20%;
-    left: 5%
+    left: 5%;
+    animation-name: scale;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scale {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .sale-image__offer h1{
@@ -139,7 +163,13 @@ body{
 .course-card{
     width: 350px;
     margin-top: 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
+
+/* .course-card:hover{
+    transform: scale(1.05);
+    transition: 0.6s;
+} */
 
 .course-card img{
     width: 100%;
@@ -147,6 +177,9 @@ body{
     margin-bottom: 10px;
 }
 
+.course-card h3:hover{
+    cursor: pointer;
+}
 .course-card h3, .course-card p{
     margin-bottom: 5px;
 }
@@ -195,11 +228,23 @@ body{
 
 .footer__links{
     display: flex;
-    gap: 30px;
+    gap: 60px;
 }
 
-.footer__links__s1 p, .footer__links__s2 p{
+.footer__links__s1, .footer__links__s2{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__links__s1 a, .footer__links__s2 a{
     margin-bottom: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer__links__s1 a:hover,
+.footer__links__s2 a:hover{
+    color: gray;
 }
 
 .footer__logo{
