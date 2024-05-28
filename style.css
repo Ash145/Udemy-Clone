@@ -120,6 +120,10 @@ body{
     top: 20%;
     left: 5%
 }
+
+.sale-image__offer h1{
+    margin-bottom: 10px;
+}
 /* Recommended Style */
 
 .recommended{
