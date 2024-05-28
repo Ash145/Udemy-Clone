@@ -200,6 +200,7 @@ img{
 
 .topics__container{
     margin-top: 10px;
+    margin-right: 10px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -285,7 +286,7 @@ img{
     }
 
     .navbar__search input{
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
